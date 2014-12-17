@@ -1,0 +1,13 @@
+{
+    "name": "visible_password",
+    "version": "0.0.1",
+    "devDependencies": {
+        "coffeebar": "",
+        "node-sass": ""
+    },
+    "scripts": {
+        "compile_coffee": "node node_modules/coffeebar/bin/coffeebar -mo lib/js/visible_password.min.js src/js/visible_password.coffee",
+        "compile_sass": "node node_modules/node-sass/bin/node-sass --output-style compressed src/css/visible_password.scss lib/css/visible_password.min.css",
+        "build": "npm run compile_coffee && npm run compile_sass"
+    }
+}
