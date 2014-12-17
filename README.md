@@ -5,7 +5,7 @@ Get rid of that 'Confirm password' field in your forms. Instead, use a password 
 
 Inspired in Windows8 Reveal Password button.
 
-[Watch it in action!]()
+[Watch it in action!](http://jsfiddle.net/2yrbcng0/)
 
 # Usage
 
