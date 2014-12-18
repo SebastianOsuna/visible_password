@@ -44,10 +44,10 @@ Option | Description
 --- | ---
 element | *DOMObject* - Input wrapper.
 input | *object* - Input element options.
-input.class | *Array | string* - Class or list of classes to be applied to the `<input>` element.
+input.class | *Array \| string* - Class or list of classes to be applied to the `<input>` element.
 input.attrs | *object* - `<input>`'s attributes. Every property of this object will be set as an HTML attribute of the `<input>`.
 widget | *object* - Widget element options.
-widget.class | *Array | string* - Class or list of classes to be applied to the `<i.widget>` element.
+widget.class | *Array \| string* - Class or list of classes to be applied to the `<i.widget>` element.
 
 You can change the icon by modifying / overriding the background image of the `.widget` selector in 
 `src/css/visible_password.scss` (`.visible-password .widget` selector).
