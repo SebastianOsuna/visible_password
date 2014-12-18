@@ -3,12 +3,38 @@
     <head>
         <title>Visible Password Example</title>
         <link rel="stylesheet" href="../lib/css/visible_password.min.css"/>
+        <style>
+            .red {
+                background-color: red;
+            }
+        </style>
     </head>
     <body>
         <span class="visible-password"></span>
         <span class="visible-password"></span>
-        <span class="visible-password"></span>
+        <span class="visible-password">
+            <input class=""/>
+            <i class="red"></i>
+        </span>
+
+        <span id="myField"></span>
 
         <script src="../lib/js/visible_password.min.js"></script>
+        <script>
+            new VisiblePasswordInput({
+                element: document.getElementById('myField'),
+                input: {
+                    class: "class1 class2",
+                    attrs: {
+                        name: 'something',
+                        placeholder: 'Input goes here',
+                        'data-anything': 'Some value'
+                    }
+                },
+                widget: {
+                    class: []
+                }
+            })
+        </script>
     </body>
 </html>

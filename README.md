@@ -14,8 +14,40 @@ Inspired in Windows8 Reveal Password button.
 3. This will create a `<input:password>` and a `<i>` element inside your wrapper.
 
 Alternatively, mark your wrapper with the `visible-password` class, and it will be initialized on load.
+
+```html
+<span id="myPassword"></span>
+```
+```javascript
+var options = {
+                  element: document.getElementById('myPassword'),
+                  input: {
+                      class: "class1 class2",
+                      attrs: {
+                          name: 'something',
+                          placeholder: 'Input goes here',
+                          'data-anything': 'Some value'
+                      }
+                  },
+                  widget: {
+                      class: ["ab", "cd"]
+                  }
+              };
+new VisiblePasswordInput(options);
+```
  
 # Customize
+
+The `VisiblePasswordInput` constructor accepts an object with the following options:
+
+Option | Description
+--- | ---
+element | *DOMObject* - Input wrapper.
+input | *object* - Input element options.
+input.class | *Array | string* - Class or list of classes to be applied to the `<input>` element.
+input.attr | *object* - `<input>`'s attributes. Every property of this object will be set as an HTML attribute of the `<input>`.
+widget | *object* - Widget element options.
+widget.class | *Array | string* - Class or list of classes to be applied to the `<i.widget>` element.
 
 You can change the icon by modifying / overriding the background image of the `.widget` selector in 
 `src/css/visible_password.scss` (`.visible-password .widget` selector).
